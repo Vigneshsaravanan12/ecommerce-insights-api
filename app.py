@@ -12,13 +12,12 @@ top_products = pd.read_csv("top_products.csv")
 top_customers = pd.read_csv("top_customers.csv")
 category_sales = pd.read_csv("category_sales.csv")
 mba_apriori = pd.read_csv("mba_rules_apriori.csv")
+recs_apriori = pd.read_csv("business_recommendations_apriori.csv")
 mba_fpgrowth = pd.read_csv("mba_rules_fpgrowth.csv")
+recs_fpgrowth = pd.read_csv("business_recommendations_fpgrowth.csv")
 reviews_sentiment = pd.read_csv("reviews_with_sentiment_final.csv")
 product_summaries = pd.read_csv("product_summaries.csv")
 
-# NEW: Business Recommendations
-recs_apriori = pd.read_csv("business_recommendations_apriori.csv")
-recs_fpgrowth = pd.read_csv("business_recommendations_fpgrowth.csv")
 
 # ----------------------------
 # Helper: safe JSON conversion
@@ -111,11 +110,12 @@ def dashboard():
     html += df_to_html("Top Customers", top_customers)
     html += df_to_html("Category Sales", category_sales)
     html += df_to_html("Market Basket Analysis (Apriori)", mba_apriori)
+    html += df_to_html("Business Recommendations (Apriori)", recs_apriori)
     html += df_to_html("Market Basket Analysis (FP-Growth)", mba_fpgrowth)
+    html += df_to_html("Business Recommendations (FP-Growth)", recs_fpgrowth)
     html += df_to_html("Review Sentiments", reviews_sentiment)
     html += df_to_html("Product Summaries", product_summaries)
-    html += df_to_html("Business Recommendations (Apriori)", recs_apriori)
-    html += df_to_html("Business Recommendations (FP-Growth)", recs_fpgrowth)
-
+    
     html += "</body></html>"
     return html
+
