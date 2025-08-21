@@ -4,7 +4,9 @@ import pandas as pd
 
 app = FastAPI(title="Ecommerce Insights API")
 
+# ----------------------------
 # Load CSV outputs
+# ----------------------------
 sales_insights = pd.read_csv("sales_insights.csv")
 top_products = pd.read_csv("top_products.csv")
 top_customers = pd.read_csv("top_customers.csv")
@@ -14,11 +16,16 @@ mba_fpgrowth = pd.read_csv("mba_rules_fpgrowth.csv")
 reviews_sentiment = pd.read_csv("reviews_with_sentiment_final.csv")
 product_summaries = pd.read_csv("product_summaries.csv")
 
+# ----------------------------
+# Root
+# ----------------------------
 @app.get("/")
 def read_root():
     return {"message": "🚀 Ecommerce Insights API is running! Visit /docs for endpoints or /dashboard for full view."}
 
-# ---------- Custom All-in-One Page ----------
+# ----------------------------
+# Dashboard route
+# ----------------------------
 @app.get("/dashboard", response_class=HTMLResponse)
 def dashboard():
     html = """
@@ -27,32 +34,28 @@ def dashboard():
         <title>Ecommerce Insights Dashboard</title>
         <style>
             body { font-family: Arial, sans-serif; margin: 20px; }
-            h2 { color: #2E86C1; }
-            table { border-collapse: collapse; width: 100%; margin-bottom: 30px; }
-            th, td { border: 1px solid #ddd; padding: 8px; text-align: center; }
-            th { background-color: #f2f2f2; }
+            h2 { color: #2c3e50; margin-top: 40px; }
+            table { border-collapse: collapse; width: 100%; margin-bottom: 40px; }
+            th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+            th { background-color: #2c3e50; color: white; }
+            tr:nth-child(even) { background-color: #f2f2f2; }
         </style>
     </head>
     <body>
-        <h1>📊 Ecommerce Insights</h1>
+        <h1>📊 Ecommerce Insights Dashboard</h1>
     """
-    datasets = [
-        ("Sales Insights", sales_insights),
-        ("Top Products", top_products),
-        ("Top Customers", top_customers),
-        ("Category Sales", category_sales),
-        ("MBA - Apriori Rules", mba_apriori),
-        ("MBA - FP-Growth Rules", mba_fpgrowth),
-        ("Review Sentiments", reviews_sentiment),
-        ("Product Summaries", product_summaries)
-    ]
 
-    for title, df in datasets:
-        html += f"<h2>{title}</h2>"
-        html += df.head(10).to_html(index=False)  # show first 10 rows for readability
+    def df_to_html(title, df):
+        return f"<h2>{title}</h2>" + df.head(10).to_html(index=False, escape=False)
 
-    html += """
-    </body>
-    </html>
-    """
+    html += df_to_html("Sales Insights", sales_insights)
+    html += df_to_html("Top Products", top_products)
+    html += df_to_html("Top Customers", top_customers)
+    html += df_to_html("Category Sales", category_sales)
+    html += df_to_html("Market Basket Analysis (Apriori)", mba_apriori)
+    html += df_to_html("Market Basket Analysis (FP-Growth)", mba_fpgrowth)
+    html += df_to_html("Review Sentiments", reviews_sentiment)
+    html += df_to_html("Product Summaries", product_summaries)
+
+    html += "</body></html>"
     return html
