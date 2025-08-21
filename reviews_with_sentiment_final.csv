@@ -1,0 +1,23 @@
+review_id,product_id,customer_id,review_text,rating,sentiment,customer_name,email,city,product_name,category,price,stock
+1,P01,101,The laptop is very fast and reliable.,5,POSITIVE,Arjun,arjun@mail.com,Chennai,Laptop,Electronics,55000.0,10
+2,P02,102,Smartphone has good features but battery drains quickly.,3,NEGATIVE,Priya,priya@mail.com,Bangalore,Smartphone,Electronics,25000.0,20
+3,P03,103,Headphones are comfortable with great sound quality.,4,POSITIVE,Rahul,rahul@mail.com,Hyderabad,Headphones,Accessories,2000.0,50
+4,P04,104,Shoes are stylish but size runs small.,3,NEGATIVE,Meena,meena@mail.com,Delhi,Shoes,Fashion,3000.0,30
+5,P05,105,Backpack is durable and spacious.,5,POSITIVE,Karthik,karthik@mail.com,Mumbai,Backpack,Fashion,1500.0,40
+6,P02,101,The mobile camera quality is excellent.,4,POSITIVE,Arjun,arjun@mail.com,Chennai,Smartphone,Electronics,25000.0,20
+7,P03,105,Headphones broke after a week.,2,NEGATIVE,Karthik,karthik@mail.com,Mumbai,Headphones,Accessories,2000.0,50
+8,P01,102,Laptop performance is decent but heats up quickly.,3,NEGATIVE,Priya,priya@mail.com,Bangalore,Laptop,Electronics,55000.0,10
+9,P05,103,Backpack straps are very comfortable.,4,POSITIVE,Rahul,rahul@mail.com,Hyderabad,Backpack,Fashion,1500.0,40
+10,P04,105,Shoes look great and fit perfectly.,5,POSITIVE,Karthik,karthik@mail.com,Mumbai,Shoes,Fashion,3000.0,30
+11,P03,104,"Headphones have average sound, not very durable.",3,NEGATIVE,Meena,meena@mail.com,Delhi,Headphones,Accessories,2000.0,50
+12,P02,101,"Smartphone battery lasts all day, very good.",5,POSITIVE,Arjun,arjun@mail.com,Chennai,Smartphone,Electronics,25000.0,20
+13,P01,103,Laptop build quality is premium.,4,POSITIVE,Rahul,rahul@mail.com,Hyderabad,Laptop,Electronics,55000.0,10
+14,P05,104,Backpack zipper got stuck after a week.,2,NEGATIVE,Meena,meena@mail.com,Delhi,Backpack,Fashion,1500.0,40
+15,P02,105,Smartphone screen is bright and smooth.,4,POSITIVE,Karthik,karthik@mail.com,Mumbai,Smartphone,Electronics,25000.0,20
+16,P04,101,Shoes are comfortable for long walks.,5,POSITIVE,Arjun,arjun@mail.com,Chennai,Shoes,Fashion,3000.0,30
+17,P03,102,Headphones mic quality is poor during calls.,2,NEGATIVE,Priya,priya@mail.com,Bangalore,Headphones,Accessories,2000.0,50
+18,P06,106,Tablet is smooth and battery backup is excellent.,5,POSITIVE,Suresh,suresh@mail.com,Pune,Tablet,Electronics,18000.0,15
+19,P07,107,Smartwatch looks stylish but battery drains fast.,3,NEGATIVE,Anjali,anjali@mail.com,Kolkata,Smartwatch,Electronics,8000.0,25
+20,P08,108,Jacket is warm and comfortable.,5,POSITIVE,Vivek,vivek@mail.com,Chandigarh,Jacket,Fashion,4000.0,20
+21,P09,109,"Keyboard keys are noisy, average build.",2,NEGATIVE,Divya,divya@mail.com,Jaipur,Keyboard,Accessories,1500.0,30
+22,P10,110,Water bottle is lightweight and durable.,4,POSITIVE,Ravi,ravi@mail.com,Lucknow,Water Bottle,Lifestyle,600.0,50

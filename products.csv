@@ -1,0 +1,11 @@
+product_id,product_name,category,price,stock
+P01,Laptop,Electronics,55000.00,10
+P02,Smartphone,Electronics,25000.00,20
+P03,Headphones,Accessories,2000.00,50
+P04,Shoes,Fashion,3000.00,30
+P05,Backpack,Fashion,1500.00,40
+P06,Tablet,Electronics,18000.00,15
+P07,Smartwatch,Electronics,8000.00,25
+P08,Jacket,Fashion,4000.00,20
+P09,Keyboard,Accessories,1500.00,30
+P10,"Water Bottle",Lifestyle,600.00,50

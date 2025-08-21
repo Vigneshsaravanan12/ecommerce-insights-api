@@ -1,0 +1,23 @@
+review_id,product_id,customer_id,review_text,rating
+1,P01,101,"The laptop is very fast and reliable.",5
+2,P02,102,"Smartphone has good features but battery drains quickly.",3
+3,P03,103,"Headphones are comfortable with great sound quality.",4
+4,P04,104,"Shoes are stylish but size runs small.",3
+5,P05,105,"Backpack is durable and spacious.",5
+6,P02,101,"The mobile camera quality is excellent.",4
+7,P03,105,"Headphones broke after a week.",2
+8,P01,102,"Laptop performance is decent but heats up quickly.",3
+9,P05,103,"Backpack straps are very comfortable.",4
+10,P04,105,"Shoes look great and fit perfectly.",5
+11,P03,104,"Headphones have average sound, not very durable.",3
+12,P02,101,"Smartphone battery lasts all day, very good.",5
+13,P01,103,"Laptop build quality is premium.",4
+14,P05,104,"Backpack zipper got stuck after a week.",2
+15,P02,105,"Smartphone screen is bright and smooth.",4
+16,P04,101,"Shoes are comfortable for long walks.",5
+17,P03,102,"Headphones mic quality is poor during calls.",2
+18,P06,106,"Tablet is smooth and battery backup is excellent.",5
+19,P07,107,"Smartwatch looks stylish but battery drains fast.",3
+20,P08,108,"Jacket is warm and comfortable.",5
+21,P09,109,"Keyboard keys are noisy, average build.",2
+22,P10,110,"Water bottle is lightweight and durable.",4

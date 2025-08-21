@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+pandas
+transformers
+scikit-learn
+mlxtend

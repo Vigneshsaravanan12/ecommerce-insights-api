@@ -1,0 +1,9 @@
+antecedents,consequents,antecedent support,consequent support,support,confidence,lift,representativity,leverage,conviction,zhangs_metric,jaccard,certainty,kulczynski,support_pct
+Jacket,Keyboard,0.2,0.2,0.2,1.0,5.0,1.0,0.16,inf,0.9999999999999998,1.0,1.0,1.0,20.0
+Tablet,Smartwatch,0.2,0.2,0.2,1.0,5.0,1.0,0.16,inf,0.9999999999999998,1.0,1.0,1.0,20.0
+Smartphone,Shoes,0.5,0.5,0.5,1.0,2.0,1.0,0.25,inf,1.0,1.0,1.0,1.0,50.0
+Headphones,Shoes,0.4,0.5,0.4,1.0,2.0,1.0,0.2,inf,0.8333333333333334,0.8,1.0,0.9,40.0
+Laptop,Shoes,0.4,0.5,0.4,1.0,2.0,1.0,0.2,inf,0.8333333333333334,0.8,1.0,0.9,40.0
+"Smartphone, Headphones",Shoes,0.4,0.5,0.4,1.0,2.0,1.0,0.2,inf,0.8333333333333334,0.8,1.0,0.9,40.0
+"Headphones, Shoes",Smartphone,0.4,0.5,0.4,1.0,2.0,1.0,0.2,inf,0.8333333333333334,0.8,1.0,0.9,40.0
+"Smartphone, Laptop",Shoes,0.4,0.5,0.4,1.0,2.0,1.0,0.2,inf,0.8333333333333334,0.8,1.0,0.9,40.0
