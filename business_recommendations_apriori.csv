@@ -1,0 +1,9 @@
+Recommendations
+"If customer buys [Jacket], recommend [Keyboard] (Confidence: 1.0, Lift: 5.0, Support: 20.0%)"
+"If customer buys [Tablet], recommend [Smartwatch] (Confidence: 1.0, Lift: 5.0, Support: 20.0%)"
+"If customer buys [Smartphone], recommend [Shoes] (Confidence: 1.0, Lift: 2.0, Support: 50.0%)"
+"If customer buys [Headphones, Smartphone], recommend [Shoes] (Confidence: 1.0, Lift: 2.0, Support: 40.0%)"
+"If customer buys [Headphones, Shoes], recommend [Smartphone] (Confidence: 1.0, Lift: 2.0, Support: 40.0%)"
+"If customer buys [Laptop, Smartphone], recommend [Shoes] (Confidence: 1.0, Lift: 2.0, Support: 40.0%)"
+"If customer buys [Laptop, Shoes], recommend [Smartphone] (Confidence: 1.0, Lift: 2.0, Support: 40.0%)"
+"If customer buys [Backpack, Smartphone], recommend [Shoes] (Confidence: 1.0, Lift: 2.0, Support: 30.0%)"
