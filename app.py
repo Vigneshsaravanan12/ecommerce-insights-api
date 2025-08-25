@@ -17,7 +17,7 @@ mba_fpgrowth = pd.read_csv("mba_rules_fpgrowth.csv")
 recs_fpgrowth = pd.read_csv("business_recommendations_fpgrowth.csv")
 reviews_sentiment = pd.read_csv("reviews_with_sentiment_final.csv")
 product_summaries = pd.read_csv("product_summaries.csv")
-
+ai_review_summary = pd.read_csv("ai_review_summary.csv")
 
 # ----------------------------
 # Helper: safe JSON conversion
@@ -79,6 +79,9 @@ def get_reviews_sentiment():
 @app.get("/product_summaries")
 def get_product_summaries():
     return safe_json(product_summaries)
+@app.get("/ai_review_summary")
+def get_ai_review_summary():
+    return ai_review_summary.to_dict(orient="records")
 
 # ----------------------------
 # Dashboard route (HTML)
@@ -115,7 +118,8 @@ def dashboard():
     html += df_to_html("Business Recommendations (FP-Growth)", recs_fpgrowth)
     html += df_to_html("Review Sentiments", reviews_sentiment)
     html += df_to_html("Product Summaries", product_summaries)
-    
+    html += df_to_html("AI Review Summary", ai_review_summary)
     html += "</body></html>"
     return html
+
 
